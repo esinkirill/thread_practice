@@ -18,6 +18,7 @@ int main() {
         std::cout << "thread " << rank << std::endl;
 
         omp_unset_lock(&lock);
+        
     }
 
 #pragma omp parallel private(rank)
